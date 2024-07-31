@@ -98,8 +98,14 @@ Xong, khởi động lại game server.
 -   ![image](https://github.com/user-attachments/assets/aab84959-62ae-4234-831b-75b2ba670519)
 -   Thay đổi ID lối vào, và 5 boss (trong ví dụ:2659,2660,2661,2662,2663,2664)  đúng với ID đã khai báo ở bước [KHAI BÁO NPC](https://github.com/cjgawatama/jx1-tan-lang/tree/main?tab=readme-ov-file#khai-b%C3%A1o-npc)
 -   Thay đổi ID map: 1047 >> ID map đã khai báo ở bước 1
+-   ![image](https://github.com/user-attachments/assets/0dc9e03f-1a30-4409-b21b-423cb1559c6d)
+
+
+-   
 -   Mỏ file `fun_loivao.lua` đường dẫn `jxser/server1/script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_loivao.lua`
 -   Thay đổi ID 1047 trong hàm `entercave()` thành ID map đã khai báo bước 1
+-   ![image](https://github.com/user-attachments/assets/7500ba0f-8789-4757-878c-d467e5bea51e)
+
   
 
         

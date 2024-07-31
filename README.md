@@ -50,7 +50,10 @@ Xong, khởi động lại game server.
 -   Tìm những dòng bắt đàu bằng 1047 và xoá hết đi
 -   thêm vào cuối nội dung sau: [maplist.txt](https://github.com/user-attachments/files/16440806/maplist.txt)
 
--   Mở file
+-   Mở file `worldset.txt` trong đường dẫn `\gateway\s3relay\setting\worldset.txt`
+-   Tìm dòng  bắt đàu bằng 1047 và xoá đi
+-   Thêm dòng này vào cuối : [worldset.txt](https://github.com/user-attachments/files/16442119/worldset.txt)
+
 
 #### KHAI BÁO NPC
 

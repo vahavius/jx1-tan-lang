@@ -95,6 +95,12 @@ Xong, khởi động lại game server.
 -   `EXP_TL_THANHTHU`,`EXP_TL_THANHTHU_NEAR`,`EXP_TL_TTH`,`EXP_TL_TTH_NEAR` quy định EXP thưởng khi tiêu diệt và đứng gần thánh thú, tần thuỷ hoàng.
 -   `tbBossThanhThuItemDropAward` quy định phần thường tiêu diệt 4 thánh thú và Tần Thuỷ Hoàng
 -   `tbBossTTHItemDropAward` quy định phần thưởng thêm khi tiêu diệt Tần Thuỷ Hoàng
+#### ĐIỀU CHỈNH THỜI GIAN MỞ SỰ KIỆN
+-   Hiện tại sụ kiện được mở tự động lúc 20:30 mỗi ngày để thay đổi các bạn thay đổi như sau:
+-   Mở file `tg_tanglang.lua` tại đường dẫn `\gateway\s3relay\relaysetting\task\tanlang\tg_tanglang.lua`
+-   Điều chỉnh dòng `TaskTime(20, 30);` Thành thời gian bạn muốn
+-   Thay đổi mỗi ngày thành ngày chỉ định: **updating**
+
 ### VIDEO HƯỚNG DẪN FULL
 **UPDATING**
 # B- Thông Tin Thêm

@@ -74,7 +74,7 @@ Xong, khởi động lại game server.
 -   Kéo xuống cuối cùng và thêm vào 2 dòng:
 -   `Task_216]` Thay thế 216 bằng số liền kề task phía trên
 -   `TaskFile=tanlang\tg_tanglang.lua `
-   ![image](https://github.com/user-attachments/assets/e388d622-08d7-4e97-866a-d26fec764ae0)
+-   ![image](https://github.com/user-attachments/assets/e388d622-08d7-4e97-866a-d26fec764ae0)
 -   Lưu và thoát file `tasklist.ini`
 -   
 #### KHAI BÁO LỐI VÀO

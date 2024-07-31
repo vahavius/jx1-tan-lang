@@ -45,6 +45,13 @@ Yêu cầu game server của bạn phải có kết nối internet
 Xong, khởi động lại game server.
 
 ### Bước 2: Cài Đặt 
+#### KHAI BÁO MAP
+-   Mở file `maplist.ini` tại đường dẫn `\server1\settings\relaysetting\maplist.ini`
+-   Tìm những dòng bắt đàu bằng 1047 và xoá hết đi
+-   thêm vào cuối nội dung sau: [maplist.txt](https://github.com/user-attachments/files/16440806/maplist.txt)
+
+-   Mở file
+
 #### KHAI BÁO NPC
 
 -   Tải file: [addnpc.xlsx](https://github.com/user-attachments/files/16438826/addnpc.xlsx)

@@ -67,11 +67,34 @@ Xong, khởi động lại game server.
 -   Mở file bằng excel: `/home/jxser/server1/settings/npcres/ÆÕÍ¨npc×ÊÔ´ÐÅÏ¢.txt`
     ![image](https://github.com/user-attachments/assets/d8adc63a-d63c-42fa-8d95-0f19808b6af4)
     Coppy  toàn bộ nội dung hàng A17 > A18 trong file `addnpc.xlsx` đã tải phía trên vào  cuối file `ÆÕÍ¨npc×ÊÔ´ÐÅÏ¢.txt`
-
 -   Dùng WinSCP đồng bộ 4 file trên với client
   
-### Bước 3: Điều Chỉnh
-### Bước 4: Cài đặt Gateway
-### VIDEO HƯỚNG DẪN FULL
+#### KHAI BÁO TASK GATEWAY
+-   Mở file `tasklist.ini` tại đường dẫn `\gateway\s3relay\relaysetting\task`
+-   Kéo xuống cuối cùng và thêm vào 2 dòng:
+-   `Task_216]` Thay thế 216 bằng số liền kề task phía trên
+-   `TaskFile=tanlang\tg_tanglang.lua `
+   ![image](https://github.com/user-attachments/assets/e388d622-08d7-4e97-866a-d26fec764ae0)
+-   Lưu và thoát file `tasklist.ini`
+-   
+#### KHAI BÁO LỐI VÀO
+-   Mở file `autoexec.lua` tại đường dẫn `jxser/server1/script/global/autoexec.lua`
+-   Tìm dòng `function main`
+-   Thêm vào phía trên: `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\fun_tanlang_main.lua")`
+-   Thêm vào phía dưới: `add_loivaotanlang()`
+#### THAY ĐỔI IDNPC
+-   Mở File `fun_tanlang_config.lua` đường dẫn `jxser/server1/script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_tanlang_config.lua`
+-   ![image](https://github.com/user-attachments/assets/aab84959-62ae-4234-831b-75b2ba670519)
+-   Thay đổi ID lối vào, và 5 boss (trong ví dụ:2659,2660,2661,2662,2663,2664)  đúng với ID đã khai báo ở bước [KHAI BÁO NPC](https://github.com/cjgawatama/jx1-tan-lang/tree/main?tab=readme-ov-file#khai-b%C3%A1o-npc)
 
+        
+### Bước 3: Điều Chỉnh
+#### ĐIỀU CHỈNH FILE CONFIG
+-   File `fun_tanlang_config.lua` đường dẫn `jxser/server1/script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_tanlang_config.lua`
+-   `CONFIG_TL_ISOPEN = 1` đỏi lại = `0` nếu bạn muốn tắt tính năng
+-   `EXP_TL_THANHTHU`,`EXP_TL_THANHTHU_NEAR`,`EXP_TL_TTH`,`EXP_TL_TTH_NEAR` quy định EXP thưởng khi tiêu diệt và đứng gần thánh thú, tần thuỷ hoàng.
+-   `tbBossThanhThuItemDropAward` quy định phần thường tiêu diệt 4 thánh thú và Tần Thuỷ Hoàng
+-   `tbBossTTHItemDropAward` quy định phần thưởng thêm khi tiêu diệt Tần Thuỷ Hoàng
+### VIDEO HƯỚNG DẪN FULL
+**UPDATING**
 # B- Thông Tin Thêm

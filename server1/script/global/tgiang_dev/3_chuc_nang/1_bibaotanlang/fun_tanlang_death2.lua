@@ -1,5 +1,5 @@
 --/======================================================================================================/--
---|										 	   Tr­êng Giang DEV			    					    	 |--
+--|										 	   TrÂ­Ãªng Giang DEV			    					    	 |--
 --| 	Telegram: cjgawatama		  		  Github: cjgawatama				 Youtube: @HoaiNiemJX1 	 |--
 --/======================================================================================================/--
 --|								     FUNCTION BOSS TAN THUY HOANG DEATH      			 				 |--
@@ -7,58 +7,58 @@
 --|                                                                                                      |--
 --|                                                                                                      |--
 --|                                                                                                      |--
---/=Include Th­ ViÖn=====================================================================================/--
+--/=Include ThÂ­ ViÃ–n=====================================================================================/--
 IncludeLib("TASKSYS")
 IncludeLib("LEAGUE")
 Include("\\script\\global\\signet_head.lua")
 Include("\\script\\missions\\basemission\\lib.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
 Include("\\script\\lib\\droptemplet.lua")
-Include("\\script\\global\\tgiang_dev\\0_config\\config_server.lua")				   	    --/Config ---|--
+Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_config.lua")--/Config ---|--
 --/======================================================================================================/--
 --|                                                                                                      |--
 --|                                                                                                      |--
 --|                                                                                                      |--
---/=Hµm Thùc Thi=========================================================================================/--
+--/=HÂµm ThÃ¹c Thi=========================================================================================/--
 --/-0-MAIN-----------------------------------------------------------------------------------------------|--
 function main()
 	dofile("script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_tanlang_death2.lua")
 end
---/-1-Hµm thùc thi khi boss chÕt-------------------------------------------------------------------------|--
+--/-1-HÂµm thÃ¹c thi khi boss chÃ•t-------------------------------------------------------------------------|--
 function OnDeath( nNpcIndex )
-	--/-Item r¬i ra tõ boss, tuú chØnh ë file config_award-----------
+	--/-Item rÂ¬i ra tÃµ boss, tuÃº chÃ˜nh Ã« file config_award-----------
 	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,%tbBossThanhThuItemDropAward,format("killed_%s",GetNpcName(nNpcIndex)))
     tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,%tbBossTTHItemDropAward,format("killed_%s",GetNpcName(nNpcIndex)))
-	--/-PhÇn th­ëng giÕt boss-----------
+	--/-PhÃ‡n thÂ­Ã«ng giÃ•t boss-----------
     local nTeamSize = GetTeamSize();
 	local szName; 
-	--/-PhÇn th­ëng giÕt boss - Team-----------
+	--/-PhÃ‡n thÂ­Ã«ng giÃ•t boss - Team-----------
 	if (nTeamSize > 1) then
 		for i=1,nTeamSize do
 			if(doFunByPlayer(GetTeamMember(i), IsCaptain)==1)then
 				szName = doFunByPlayer(GetTeamMember(i), GetName);
 			end
-			doFunByPlayer(GetTeamMember(i), PlayerFunLib.AddExp, PlayerFunLib, EXP_TL_TTH, 0, format("%s phÇn th­ëng","Kinh nghiÖm ®¶ b¹i Boss TÇn Thuû Hoµng "));
-			Msg2Player("<color=yellow>§¹i hiÖp ®· ®¸nh chÕt boss nhËn th­ëng: <color> "..EXP_TL_TTH)
+			doFunByPlayer(GetTeamMember(i), PlayerFunLib.AddExp, PlayerFunLib, EXP_TL_TTH, 0, format("%s phÃ‡n thÂ­Ã«ng","Kinh nghiÃ–m Â®Â¶ bÂ¹i Boss TÃ‡n ThuÃ» HoÂµng "));
+			Msg2Player("<color=yellow>Â§Â¹i hiÃ–p Â®Â· Â®Â¸nh chÃ•t boss nhÃ‹n thÂ­Ã«ng: <color> "..EXP_TL_TTH)
 		end
 	else 
-	--/-PhÇn th­ëng giÕt boss - Mét m×nh-----------
+	--/-PhÃ‡n thÂ­Ã«ng giÃ•t boss - MÃ©t mÃ—nh-----------
 		szName = GetName();
-		PlayerFunLib:AddExp(EXP_TL_TTH, 0, format("%s phÇn th­ëng","Kinh nghiÖm ®¶ b¹i Boss TÇn Thuû Hoµng "));
-		Msg2Player("<color=green>§¹i hiÖp nhËn ®­îc kinh nghiÖm giÕt boss: <color>"..EXP_TL_TTH)
+		PlayerFunLib:AddExp(EXP_TL_TTH, 0, format("%s phÃ‡n thÂ­Ã«ng","Kinh nghiÃ–m Â®Â¶ bÂ¹i Boss TÃ‡n ThuÃ» HoÂµng "));
+		Msg2Player("<color=green>Â§Â¹i hiÃ–p nhÃ‹n Â®Â­Ã®c kinh nghiÃ–m giÃ•t boss: <color>"..EXP_TL_TTH)
 	end
-	--/-PhÇn th­ëng giÕt boss - §øng gÇn boss-----------
+	--/-PhÃ‡n thÂ­Ã«ng giÃ•t boss - Â§Ã¸ng gÃ‡n boss-----------
 	local tbRoundPlayer, nCount = GetNpcAroundPlayerList(nNpcIndex, 20);	
 	for i=1,nCount do
-		doFunByPlayer(tbRoundPlayer[i], PlayerFunLib.AddExp, PlayerFunLib, EXP_TL_TTH_NEAR, 0, format("%s phÇn th­ëng","Kinh nghiÖm ®øng gÇn lóc Boss TÇn Thuû Hoµng "));
-		Msg2Player("<color=blue>§¹i hiÖp nhËn ®­îc kinh nghiÖm ®øng gÇn boss: <color>"..EXP_TL_TTH_NEAR)
+		doFunByPlayer(tbRoundPlayer[i], PlayerFunLib.AddExp, PlayerFunLib, EXP_TL_TTH_NEAR, 0, format("%s phÃ‡n thÂ­Ã«ng","Kinh nghiÃ–m Â®Ã¸ng gÃ‡n lÃ³c Boss TÃ‡n ThuÃ» HoÂµng "));
+		Msg2Player("<color=blue>Â§Â¹i hiÃ–p nhÃ‹n Â®Â­Ã®c kinh nghiÃ–m Â®Ã¸ng gÃ‡n boss: <color>"..EXP_TL_TTH_NEAR)
 	end
-	--/-Th«ng b¸o tiªu diÖt-----------	
-	local szNews = format("§¹i hiÖp <color=yellow>%s<color> t¹i <color=yellow>%s<color> ®· tiªu diÖt thµnh c«ng <color=yellow>%s<color>!", GetName(), SubWorldName(SubWorld),GetNpcName(nNpcIndex));
+	--/-ThÂ«ng bÂ¸o tiÂªu diÃ–t-----------	
+	local szNews = format("Â§Â¹i hiÃ–p <color=yellow>%s<color> tÂ¹i <color=yellow>%s<color> Â®Â· tiÂªu diÃ–t thÂµnh cÂ«ng <color=yellow>%s<color>!", GetName(), SubWorldName(SubWorld),GetNpcName(nNpcIndex));
 	AddGlobalNews(szNews);
 
 end;
---/-2-hµm xo¸ boss---------------------------------------------------------------------------------------|--
+--/-2-hÂµm xoÂ¸ boss---------------------------------------------------------------------------------------|--
 
 function OnTimer(nNpcIndex, nTimeOut)
 	DelNpc(nNpcIndex);

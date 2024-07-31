@@ -121,7 +121,10 @@ Xong, khởi động lại game server.
 -   Mở file `tg_tanglang.lua` tại đường dẫn `\gateway\s3relay\relaysetting\task\tanlang\tg_tanglang.lua`
 -   Điều chỉnh dòng `TaskTime(20, 30);` Thành thời gian bạn muốn
 -   Thay đổi mỗi ngày thành ngày chỉ định: **updating**
-
+#### THÊM VÀO LỆNH BÀI ADMIN
+-   Include `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_main.lua")")`
+-   Chạy hàm `Tgiang_GoiBossTL1()`
+-   
 ### VIDEO HƯỚNG DẪN FULL
 https://www.youtube.com/watch?v=GZg8cCizisQ
 # B- Thông Tin Thêm

@@ -117,5 +117,5 @@ Xong, khởi động lại game server.
 -   Thay đổi mỗi ngày thành ngày chỉ định: **updating**
 
 ### VIDEO HƯỚNG DẪN FULL
-**UPDATING**
+https://www.youtube.com/watch?v=GZg8cCizisQ
 # B- Thông Tin Thêm

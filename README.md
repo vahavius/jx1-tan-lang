@@ -1,4 +1,4 @@
-Tần Lăng Bí Bảo - JX LINUX
+# Tần Lăng Bí Bảo - JX LINUX
 
 Tính Năng Tần Lăng
 

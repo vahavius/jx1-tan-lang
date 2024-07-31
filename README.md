@@ -42,7 +42,7 @@ Yêu cầu game server của bạn phải có kết nối internet
 Xong, khởi động lại game server.
 
 ### Bước 2: Cài Đặt 
-#### ADD NPC
+#### KHAI BÁO NPC
 
 -   Tải file: [addnpc.xlsx](https://github.com/user-attachments/files/16438826/addnpc.xlsx)
 
@@ -64,7 +64,9 @@ Xong, khởi động lại game server.
 -   Mở file bằng excel: '/home/jxser/server1/settings/npcres/ÆÕÍ¨npc×ÊÔ´ÐÅÏ¢.txt'
     ![image](https://github.com/user-attachments/assets/d8adc63a-d63c-42fa-8d95-0f19808b6af4)
     Coppy  toàn bộ nội dung hàng A17 > A18 trong file addnpc.xlsx đã tải phía trên vào  cuối file ÆÕÍ¨npc×ÊÔ´ÐÅÏ¢.txt
-    
+
+-   Dùng WinSCP đồng bộ 4 file trên với client
+  
 ### Bước 3: Điều Chỉnh
 ### Bước 4: Cài đặt Gateway
 ### VIDEO HƯỚNG DẪN FULL

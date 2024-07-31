@@ -47,12 +47,13 @@ Xong, khởi động lại game server.
 ### Bước 2: Cài Đặt 
 #### KHAI BÁO MAP
 -   Mở file `maplist.ini` tại đường dẫn `\server1\settings\relaysetting\maplist.ini`
--   Tìm những dòng bắt đàu bằng 1047 và xoá hết đi
 -   thêm vào cuối nội dung sau: [maplist.txt](https://github.com/user-attachments/files/16440806/maplist.txt)
+-   Thay số 1047 thành số liền kề map phía trên và ghi nhớ số này
+-   Đồng bộ file này về client
 
 -   Mở file `worldset.txt` trong đường dẫn `\gateway\s3relay\setting\worldset.txt`
--   Tìm dòng  bắt đàu bằng 1047 và xoá đi
 -   Thêm dòng này vào cuối : [worldset.txt](https://github.com/user-attachments/files/16442119/worldset.txt)
+-   Thay 1047 thành ID map phía trên.
 
 
 #### KHAI BÁO NPC
@@ -92,10 +93,14 @@ Xong, khởi động lại game server.
 -   Tìm dòng `function main`
 -   Thêm vào phía trên: `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_main.lua")")`
 -   Thêm vào phía dưới: `add_loivaotanlang()`
-#### THAY ĐỔI IDNPC
+#### THAY ĐỔI IDNPC VÀ IDMAP
 -   Mở File `fun_tanlang_config.lua` đường dẫn `jxser/server1/script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_tanlang_config.lua`
 -   ![image](https://github.com/user-attachments/assets/aab84959-62ae-4234-831b-75b2ba670519)
 -   Thay đổi ID lối vào, và 5 boss (trong ví dụ:2659,2660,2661,2662,2663,2664)  đúng với ID đã khai báo ở bước [KHAI BÁO NPC](https://github.com/cjgawatama/jx1-tan-lang/tree/main?tab=readme-ov-file#khai-b%C3%A1o-npc)
+-   Thay đổi ID map: 1047 >> ID map đã khai báo ở bước 1
+-   Mỏ file `fun_loivao.lua` đường dẫn `jxser/server1/script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_loivao.lua`
+-   Thay đổi ID 1047 trong hàm `entercave()` thành ID map đã khai báo bước 1
+  
 
         
 ### Bước 3: Điều Chỉnh

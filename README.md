@@ -24,8 +24,8 @@ Tính Năng Tần Lăng
  
 ### Bước 1: Download
 #### Thủ công
--   Tải file:
--   Giải nén ở thư mục gốc `jxser`.
+-   Tải file: [TanLang](https://github.com/cjgawatama/jx1-tan-lang/archive/refs/heads/main.zip)
+-   Dùng WinSCP up lên thư mục gốc `jxser`.
   
 -   Tải file:[boss_pain002_tth.zip](https://github.com/user-attachments/files/16439423/boss_pain002_tth.zip)
 -   Giải nén ở client  `\spr\npcres\boss`.

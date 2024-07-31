@@ -25,8 +25,9 @@ Tính Năng Tần Lăng
 ### Bước 1: Download
 #### Thủ công
 -   Tải file:
--   Giải nén ở hư mục gốc jxser.
-#### Tự động (Dành cho các bạn đang chạy bản 1click của bác vinh-ttn
+-   Giải nén ở thư mục gốc jxser.
+#### Tự động (Dành cho các bạn đang chạy bản 1click của bác [Vinh TTN](https://www.facebook.com/groups/800085930700601/user/1576281122)
+
 ![](https://github.com/vinh-ttn/materials/blob/main/simcity/caidat_capnhat_simcity.gif)
 
 

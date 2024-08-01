@@ -47,7 +47,8 @@ Xong, khởi động lại game server.
 ### Bước 2: Cài Đặt 
 #### KHAI BÁO MAP
 -   Mở file `maplist.ini` tại đường dẫn `\server1\settings\relaysetting\maplist.ini`
--   thêm vào cuối nội dung sau: [maplist.txt](https://github.com/user-attachments/files/16440806/maplist.txt)
+-   thêm vào cuối nội dung sau:[maplist.txt](https://github.com/user-attachments/files/16458431/maplist.txt)
+
 -   Thay số 1047 thành số liền kề map phía trên và ghi nhớ số này
 -   Đồng bộ file này về client
 

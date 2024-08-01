@@ -1,5 +1,5 @@
 --/======================================================================================================/--
---|										 	   Tr­êng Giang DEV			    					    	 |--
+--|										 	   TrÂ­Ãªng Giang DEV			    					    	 |--
 --| 	Telegram: cjgawatama		  		  Github: cjgawatama				 Youtube: @HoaiNiemJX1 	 |--
 --/======================================================================================================/--
 --|									   FUNCTION BOSS TAN LANG ENTER POINT      							 |--
@@ -7,7 +7,7 @@
 --|                                                                                                      |--
 --|                                                                                                      |--
 --|                                                                                                      |--
---/=Include Th­ ViÖn=====================================================================================/--
+--/=Include ThÂ­ ViÃ–n=====================================================================================/--
 IncludeLib("TASKSYS")
 IncludeLib("LEAGUE")
 Include("\\script\\global\\signet_head.lua")
@@ -23,7 +23,7 @@ Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_
 --|                                                                                                      |--
 --|                                                                                                      |--
 --|                                                                                                      |--
---/=Hµm Thùc Thi=========================================================================================/--
+--/=HÂµm ThÃ¹c Thi=========================================================================================/--
 --/-0-MAIN-----------------------------------------------------------------------------------------------|--
 function main()
 dofile("script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_loivao.lua")
@@ -43,14 +43,32 @@ local day = tonumber(date("%w"))
         entercave()
         return
     else
-        Talk(1, "", "B¹n t×m ®Õn n÷a ngµy vÉn kh«ng t×m thÊy lèi vµo");  
+        Talk(1, "", "BÂ¹n tÃ—m Â®Ã•n nÃ·a ngÂµy vÃ‰n khÂ«ng tÃ—m thÃŠy lÃ¨i vÂµo");  
     end
         
 end
 
 function entercave()
     NewWorld(1047,1319,3503)
+    GoiPTToiNoi() 
     SetFightState(1)
+end
+
+function GoiPTToiNoi() 
+ local nW,nX,nY = GetWorldPos();
+ local nFightMode = GetFightState();
+ local nPreservedPlayerIndex = PlayerIndex;
+ local nMemCount = GetTeamSize();
+ if (nMemCount == 0 ) then
+ return 0
+ end
+ for i = 1, nMemCount do
+ PlayerIndex = GetTeamMember( i );
+ SetFightState(nFightMode)
+ NewWorld(nW, nX, nY);
+ end;
+ PlayerIndex = nPreservedPlayerIndex;
+ return 0
 end
 
 function no()

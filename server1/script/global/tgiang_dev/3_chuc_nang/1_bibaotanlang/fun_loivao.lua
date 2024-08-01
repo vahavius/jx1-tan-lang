@@ -50,8 +50,9 @@ end
 
 function entercave()
     NewWorld(1047,1319,3503)
-    GoiPTToiNoi() 
     SetFightState(1)
+    GoiPTToiNoi() 
+
 end
 
 function GoiPTToiNoi() 

@@ -91,7 +91,7 @@ Xong, khởi động lại game server.
 #### KHAI BÁO LỐI VÀO
 -   Mở file `autoexec.lua` tại đường dẫn `jxser/server1/script/global/autoexec.lua`
 -   Tìm dòng `function main`
--   Thêm vào phía trên: `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_main.lua")")`
+-   Thêm vào phía trên: `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_main.lua")`
 -   Thêm vào phía dưới: `add_loivaotanlang()`
 #### THAY ĐỔI IDNPC VÀ IDMAP
 -   Mở File `fun_tanlang_config.lua` đường dẫn `jxser/server1/script/global/tgiang_dev/3_chuc_nang/1_bibaotanlang/fun_tanlang_config.lua`
@@ -122,7 +122,7 @@ Xong, khởi động lại game server.
 -   Điều chỉnh dòng `TaskTime(20, 30);` Thành thời gian bạn muốn
 -   Thay đổi mỗi ngày thành ngày chỉ định: **updating**
 #### THÊM VÀO LỆNH BÀI ADMIN
--   Include `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_main.lua")")`
+-   Include `Include("\\script\\global\\tgiang_dev\\3_chuc_nang\\1_bibaotanlang\\fun_tanlang_main.lua")`
 -   Chạy hàm `Tgiang_GoiBossTL1()`
 -   
 ### VIDEO HƯỚNG DẪN FULL
